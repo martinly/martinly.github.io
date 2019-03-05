@@ -1,10 +1,11 @@
 
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>一隅</title>
+<title>制造行业的年轻人 | 一隅</title>
 <meta name="description" content="一介书生">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +14,12 @@
 <link rel="shortcut icon" href="https://martinly.github.io/favicon.ico">
 <link rel="stylesheet" href="https://martinly.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -80,69 +87,36 @@
 
 
       <div class="content-container">
-        
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://martinly.github.io/post/zhi-zao-xing-ye-de-nian-qing-ren">
-        <h2 class="post-title">制造行业的年轻人</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-03-05</span>
-        
-      </div>
-    </div>
-    
-      <a href="https://martinly.github.io/post/zhi-zao-xing-ye-de-nian-qing-ren">
-        <div class="feature-container" style="background-image: url('https://martinly.github.io/post-images/zhi-zao-xing-ye-de-nian-qing-ren.jpg')">
+        <div class="post-detail">
+          <h2 class="post-title">制造行业的年轻人</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-03-05</span>
+            
+          </div>
+          <div class="post-content">
+            <p>身在重工行业，眼见的年轻人越来越少，偶尔见到，也是很快辞职，车间的老师傅，永远是那么几位。<br>破旧的厂房，微薄的待遇，在今天的高房价和高通胀面前，不值一提。<br>这一行业的最大风险就是老员工不值钱，一辈子到头也就万把块，如何养家?<br><img src="https://martinly.github.io/post-images/1551799313782.jpg" alt=""></p>
+
+          </div>
         </div>
-      </a>
-    
-  </section>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://martinly.github.io/post/2019-di-yi-pian">
-        <h2 class="post-title">2019第一篇</h2>
-      </a>
-      <div class="post-abstract">
         
+          <div class="next-post">
+            <a class="purple-link" href="https://martinly.github.io/post/2019-di-yi-pian">
+              <h3 class="post-title">
+                下一篇：2019第一篇
+              </h3>
+            </a>
+          </div>
+          
       </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-02-20</span>
+
+      
         
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://martinly.github.io/post/guan-yu">
-        <h2 class="post-title">关于</h2>
-      </a>
-      <div class="post-abstract">
+          <div id="gitalk-container"></div>
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2019-01-18</span>
+
         
-      </div>
-    </div>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
-      </div>
+      
 
       <div class="site-footer">
   <div class="slogan">一介书生</div>
@@ -163,6 +137,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '91a23c3ed5d9c67b7c1e',
+        clientSecret: '79fe7f203e3f45af3808f769c3f55b4b8088420a',
+        repo: 'https://martinly.github.io',
+        owner: 'martinly',
+        admin: ['martinly'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
