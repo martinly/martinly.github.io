@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>一个产品的消失 | 一隅</title>
+<meta name="description" content="一介书生">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="shortcut icon" href="https://martinly.github.io/favicon.ico">
+<link rel="stylesheet" href="https://martinly.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://martinly.github.io">
+        <img class="avatar" src="https://martinly.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://martinly.github.io">
+        <h1 class="site-title">一隅</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="https://www.douban.com/people/1301000/" class="menu" target="_blank">
+            豆瓣
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          <h2 class="post-title">一个产品的消失</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-07-10</span>
+            
+          </div>
+          <div class="post-content">
+            <p>2019年7月9日，New MacBook被苹果下架。这是一个极致产品的消亡，一个耀目流星的闪现与滑落。<br><img src="https://martinly.github.io/post-images/1562716726143.png" alt=""></p>
+<!-- more --> 
+
+<p>我第一个苹果产品是iTouch，第一台苹果电脑是09年的丐版MacBook Pro，New MacBook前后用过三台，分别是15款丐版，二手收得；17版丐版，京东双十一入手；17版i5+16+512定制版，淘宝购得，一直使用到现在。中间还穿插了一台18丐版MacBook Pro 15，使用半年后，赚了5000块，然后损失三千出了二手，才入的现在手上这款。<br>几经反复，方得始终。<br><img src="https://martinly.github.io/post-images/1562717022272.png" alt=""><br>最适合我的还是New MacBook，无他，唯其轻巧够用。日常自带备忘录记事，上网查阅信息，合盖即走，不用担心是否关机；私活用其中的虚拟机，16g内存后PD和VM均很流畅，工控编程和CAD画图也不见难受，只是逼人学会了cad键盘操作（没有专门的del键）。<br>中间不断比较，几番使用，感受如下：如果只是纯文字工作，查阅网上资料，那么15款丐版NMB即可，如果还有部分性能应用，长时间虚拟机跑win，那么内存至少上16g，硬盘最好上512。15虽然比同类Win本轻便，但不能和12相比，12可以单手长时间举持，丢在包里轻若无物，15的大小和重量，固然带来性能飞跃，屏幕观感上升，但对于一个经常要收起来的电脑来说，没有比NMB12更合适的了。<br>这样的产品被下架，往好的方向预测，必然是新的Pro或者Air能够达到取代其轻巧特质的程度，要么13pro变轻，要么Air变得无边框，大小与12相同，这都是好事儿。<br>拭目以待，show me the Mac and take my money！</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://martinly.github.io/post/zhi-zao-xing-ye-de-nian-qing-ren">
+              <h3 class="post-title">
+                下一篇：制造行业的年轻人
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan">一介书生</div>
+  Powered by martinly
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '91a23c3ed5d9c67b7c1e',
+        clientSecret: '79fe7f203e3f45af3808f769c3f55b4b8088420a',
+        repo: 'https://martinly.github.io',
+        owner: 'martinly',
+        admin: ['martinly'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
